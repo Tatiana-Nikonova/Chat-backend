@@ -2,5 +2,4 @@
  
 frontend проекта - https://github.com/Tatiana-Nikonova/Chat
 
-heroku - 
-
+heroku - https://chat-bac.herokuapp.com
