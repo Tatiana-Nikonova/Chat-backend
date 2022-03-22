@@ -1,0 +1,37 @@
+{
+  "name": "chat-back",
+  "version": "1.0.0",
+  "description": "Серверная часть на heroku",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "lint-fix": "eslint . --fix",
+    "prestart": "npm install",
+    "start": "forever ./src/server.js",
+    "watch": "forever -w ./src/server.js",
+    "start-dev": "nodemon ./src/server.js"
+  },
+  "engines": {
+    "node": "11.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tatiana-Nikonova/Chat-backend.git"
+  },
+  "author": "Tatiana Nikonova",
+  "license": "ISC",
+  "dependencies": {
+    "core-js": "^3.7.0",
+    "forever": "^4.0.1",
+    "koa": "^2.13.4",
+    "uuid": "^8.3.2",
+    "ws": "^7.5.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "bugs": {
+    "url": "https://github.com/Tatiana-Nikonova/Chat-backend/issues"
+  },
+  "homepage": "https://github.com/Tatiana-Nikonova/Chat-backend#readme"
+}
